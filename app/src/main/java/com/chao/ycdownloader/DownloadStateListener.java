@@ -17,4 +17,5 @@ public interface DownloadStateListener {
     void onCompleted();
 
     void onDeleted();
+
 }
