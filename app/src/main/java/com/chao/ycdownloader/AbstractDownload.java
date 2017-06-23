@@ -21,12 +21,8 @@ public abstract class AbstractDownload {
 
     abstract void setOnDownloadStateListener(DownloadStateListener listener);
 
-    public TaskInfo getTaskInfo(int userId,int resId){
-        return getTaskInfo(userId,resId);
-    }
+    abstract TaskInfo getTaskInfo(int userId,int resId,String name);
 
-    public TaskInfo getTaskInfo(int userId,int... resId){
-        return null;
-    }
+    abstract TaskInfo getTaskInfo(int userId,int[] resId,String... name);
 
 }
